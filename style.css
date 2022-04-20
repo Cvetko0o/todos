@@ -48,6 +48,8 @@ input::placeholder {
     padding-left: 20px;
 }
 
+
+
 .todo-extension li.completed {
     text-decoration: line-through;
 }

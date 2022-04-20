@@ -13,6 +13,11 @@ form.addEventListener('submit', (e) => {
         todoEl.addEventListener('click', () => {
             todoEl.classList.toggle('completed');
         });
+
+        todoEl.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            todoEl.remove();
+        });
         todos[0].appendChild(todoEl);
         input.value = '';
 
